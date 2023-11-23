@@ -1,0 +1,24 @@
+@import "../../colors";
+
+.main {
+    max-width: 600px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 1rem;
+    padding: 1rem 1.25rem;
+    background-color: transparentize($pastelYellow, .25);
+    border-radius: 1rem;
+    border: 3px solid $pastelYellow;
+
+    h3 {
+        font-weight: 800;
+    }
+
+    span {
+        font-weight: 500;
+    }
+}
