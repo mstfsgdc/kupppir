@@ -1,3 +1,5 @@
-.avatar {
-    
+@import "../../../../stylings";
+
+.avatar, .username {
+    @include shadow-light;
 }
