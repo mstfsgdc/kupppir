@@ -2,55 +2,59 @@
 @import "../../stylings";
 
 .main {
-    max-width: 600px;
-    min-height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 2rem 1rem;
-    padding: 1rem 1.25rem;
-    background-color: transparentize($pastelYellow, .25);
-    border-radius: 1rem;
-    border: 3px solid $pastelYellow;
+  max-width: 600px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 1rem;
+  padding: 1rem 1.25rem;
+  background-color: transparentize($pastelYellow, 0.25);
+  border-radius: 1rem;
+  border: 3px solid $pastelYellow;
+  transition: transform 0.3s ease-in-out;
 
-    @include shadow;
+  @include shadow;
 
-    h3 {
-        font: {
-            size: 1.15rem;
-            weight: 800;
-        }
+  h3 {
+    font: {
+      size: 1.15rem;
+      weight: 800;
     }
+  }
 
-    span {
-        font: {
-            size: 1rem;
-            weight: 500;
-        }
+  span {
+    font: {
+      size: 1rem;
+      weight: 500;
     }
+  }
 
-    // Custom Classes
-    &.twitch {
-        background-color: transparentize($twitchBg, .25);
-        border: 3px solid $twitchBg;
-        color: $twitch;
-    }
+  // Custom Classes
+  &.twitch {
+    background-color: transparentize($twitchBg, 0.25);
+    border: 3px solid $twitchBg;
+    color: $twitch;
+  }
 
-    &.youtube {
-        background-color: transparentize($youtubeBg, .25);
-        border: 3px solid $youtubeBg;
-    }
+  &.youtube {
+    background-color: transparentize($youtubeBg, 0.25);
+    border: 3px solid $youtubeBg;
+  }
 
-    &.instagram {
-        background-color: transparentize($instagramBg, .25);
-        border: 3px solid $instagramBg;
-    }
+  &.instagram {
+    background-color: transparentize($instagramBg, 0.25);
+    border: 3px solid $instagramBg;
+  }
 
-    &.discord {
-        background-color: transparentize($discordBg, .25);
-        border: 3px solid $discordBg;
-        color: $discord;
-    }
+  &.discord {
+    background-color: transparentize($discordBg, 0.25);
+    border: 3px solid $discordBg;
+    color: $discord;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
 }
