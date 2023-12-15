@@ -1,0 +1,59 @@
+@import "../../colors";
+@import "../../stylings";
+
+.twitchStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+
+    @include shadow;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: .8rem;
+    }
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    margin-top: .5rem;
+
+    span {
+        padding: .5rem;
+        border-radius: .25rem;
+        border-bottom: 2px solid #9146ff;
+        font: {
+            style: italic;
+            size: .9rem;
+        }
+        background-color: lighten(#9146ff, 20%);
+        transition: background-color 0.15s ease-in;
+
+        &:hover {
+            background-color: #9146ff;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .stats {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
