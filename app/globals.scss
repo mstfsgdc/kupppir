@@ -51,3 +51,27 @@ body {
         font-size: 14px;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darken($bgColor, 10%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darken($bgColor, 20%);
+}

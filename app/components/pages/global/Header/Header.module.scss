@@ -1,5 +1,27 @@
+@import "../../../../colors";
 @import "../../../../stylings";
 
 .avatar, .username {
     @include shadow-light;
+}
+
+.avatar {
+    img {
+        &:hover {
+            transform: rotate(-5deg) translate(-2px);
+        }
+    }
+}
+
+.username {
+    h2 {
+        a {
+            border-bottom: 0 solid $twitchBg;
+            transition: border-bottom 0.1s ease-in;
+
+            &:hover {
+                border-bottom-width: 4px;
+            }
+        }
+    }
 }

@@ -37,16 +37,16 @@
     span {
         padding: .5rem;
         border-radius: .25rem;
-        border-bottom: 2px solid #9146ff;
+        border-bottom: 2px solid $twitchBg;
         font: {
             style: italic;
             size: .9rem;
         }
-        background-color: lighten(#9146ff, 20%);
+        background-color: lighten($twitchBg, 20%);
         transition: background-color 0.15s ease-in;
 
         &:hover {
-            background-color: #9146ff;
+            background-color: $twitchBg;
         }
     }
 }
