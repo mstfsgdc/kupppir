@@ -18,6 +18,19 @@
 
   @include shadow;
 
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   h3 {
     font: {
       size: 1.15rem;
